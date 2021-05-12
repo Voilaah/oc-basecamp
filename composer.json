@@ -1,5 +1,5 @@
 {
-    "name": "voilaah/basecamp",
+    "name": "voilaah/basecamp-plugin",
     "description": "Basecamp app for project communication",
     "type": "october-plugin",
     "license": "MIT",
