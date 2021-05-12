@@ -9,5 +9,7 @@
             "email": "chris@voilaah.com"
         }
     ],
-    "require": {}
+    "require": {
+        "composer/installers": "~1.0"
+    }
 }
