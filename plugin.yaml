@@ -1,0 +1,6 @@
+plugin:
+    name: 'voilaah.basecamp::lang.plugin.name'
+    description: 'voilaah.basecamp::lang.plugin.description'
+    author: Voilaah
+    icon: oc-icon-fire
+    homepage: ''

@@ -1,0 +1,13 @@
+{
+    "name": "voilaah/basecamp",
+    "description": "Basecamp app for project communication",
+    "type": "october-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chrisvidal",
+            "email": "chris@voilaah.com"
+        }
+    ],
+    "require": {}
+}
