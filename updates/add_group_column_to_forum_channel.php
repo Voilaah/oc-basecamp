@@ -9,7 +9,7 @@ class AddGroupColumnToForumChannel extends Migration
     public function up()
     {
         Schema::table('rainlab_forum_channels', function (Blueprint $table) {
-            $table->integer('permission_group_id')->nullable()->after('parent_id');
+            $table->integer('permission_group_id')->nullable()->default(null)->after('parent_id');
         });
     }
 

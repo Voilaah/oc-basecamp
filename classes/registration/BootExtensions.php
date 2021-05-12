@@ -28,7 +28,7 @@ trait BootExtensions
 
         $model->addDynamicMethod('groupOptions', function () use ($model) {
             $groups = UserGroup::lists('name', 'id');
-            return [ '' => 'All groups' ] + $groups;
+            return [ 0 => 'All groups' ] + $groups;
         });
     });
 
