@@ -11,8 +11,7 @@ class Plugin extends PluginBase
     use BootComponents;
     use BootSettings;
 
-    public $require = ['RainLab.User', 'RainLab.Forum'];
-
+    public $require = ['RainLab.User', 'RainLab.Forum', 'Responsiv.Uploader'];
 
     public function boot() {
         $this->registerExtensions();

@@ -5,3 +5,5 @@
     - add_group_column_to_forum_channel.php
 1.0.3:
     - 'Bug fix release'
+1.0.4:
+    - 'Added file Uploading capacity inside Topic Post'
