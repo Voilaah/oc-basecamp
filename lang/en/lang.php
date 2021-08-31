@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
         'name' => 'Basecamp',
-        'description' => ''
+        'description' => 'Collaborative projects management'
     ]
 ];
