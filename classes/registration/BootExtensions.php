@@ -2,11 +2,13 @@
 
 namespace Voilaah\Basecamp\Classes\Registration;
 
+use RainLab\Forum\Models\Post as TopicPost;
+use RainLab\Forum\Models\Topic;
+use RainLab\Forum\Models\Channel;
+use System\Classes\PluginManager;
+use RainLab\User\Models\UserGroup;
 use Illuminate\Support\Facades\Event;
 use RainLab\Forum\Controllers\Channels;
-use RainLab\Forum\Models\Channel;
-use RainLab\User\Models\UserGroup;
-use System\Classes\PluginManager;
 
 trait BootExtensions
 {
@@ -30,6 +32,12 @@ trait BootExtensions
             $groups = UserGroup::lists('name', 'id');
             return [ 0 => 'All groups' ] + $groups;
         });
+    });
+
+    TopicPost::extend(function ($model) {
+        $model->attachMany = [
+            'files' => 'System\Models\File'
+        ];
     });
 
      // extend the post form
