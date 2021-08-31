@@ -36,7 +36,8 @@ trait BootExtensions
 
     TopicPost::extend(function ($model) {
         $model->attachMany = [
-            'files' => 'System\Models\File'
+            'files' => 'System\Models\File',
+            'delete' => true
         ];
     });
 

@@ -8,6 +8,7 @@ trait BootComponents
     {
         return [
             '\Voilaah\Basecamp\Components\Channels'     => 'bcForumChannels',
+            '\Voilaah\Basecamp\Components\ForumTopic'     => 'bcForumTopic',
 
         ];
     }
